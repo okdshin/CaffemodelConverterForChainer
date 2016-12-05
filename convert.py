@@ -4,7 +4,7 @@ import argparse
 from chainer.links.caffe import CaffeFunction
 
 def main():
-    parser = argparse.ArgumentParser(description='Master')
+    parser = argparse.ArgumentParser(description='CaffeModelConverter')
     parser.add_argument('-modelpath', type=str, help='path of target caffe model')
     args = parser.parse_args()
     vgg = CaffeFunction(args.modelpath)
